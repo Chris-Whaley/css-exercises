@@ -1,0 +1,13 @@
+/* Only the `p` elements that are descendants of the `div` element should have 
+    yellow background, 
+    red text, 
+    font size of 20px, and 
+    center aligned. */
+
+/* class selector */
+.container .text {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
