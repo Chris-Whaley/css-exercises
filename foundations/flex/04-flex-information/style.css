@@ -10,6 +10,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
 }
 
 /* do not edit this footer */
@@ -23,4 +25,46 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+/*
+Lessons learned 
+  1. didn't need to put title in a container with icons and txt
+  2. can text-align body so I can center both title and icon text in one place
+  3. can give each icon section in html the same class name
+  4. so only needed 2 containers: 
+    a) container for all icons and text
+    b) container for each icon and text, but only referenced once by giving them all the same class name ("info")
+*/
+.vertical-container {
+  display: flex;
+  flex-direction: column; /* stack title container on top of icons-and-text container */
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.all-icons-and-text {
+  display: flex;
+  justify-content: center;
+  gap: 52px
+}
+
+.barb-container,
+.chilli-container,
+.pepper-container,
+.saff-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+}
+
+.barb-container .text,
+.chilli-container .text,
+.pepper-container .text,
+.saff-container .text {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
 }
