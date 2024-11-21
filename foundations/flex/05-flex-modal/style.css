@@ -39,7 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: auto 1 auto;
+  flex-shrink: 1;
 }
 
 .close-button {
