@@ -24,3 +24,79 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* my solution */
+/* reorder header, content, and footer into column */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* remove bullets */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+/* remove hyperlink underline; change font to dark gray */
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: darkslategray;
+}
+
+/* order links into row */
+.header,
+.footer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;  /* this fixed the padding error with the left links */
+  padding: 16px;
+}
+
+/* this didn't work. got weird padding and right justification */
+/* .left-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.right-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex: 1 0 auto;
+} */
+
+/* align logo, search bar, and buttons in center */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;  /* allow content to fill space */
+  justify-content: center;
+  gap: 20px
+}
+
+button {
+  padding: 8px;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* this piece fixed the links from column to row*/
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+}
