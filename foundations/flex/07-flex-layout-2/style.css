@@ -27,3 +27,68 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* My Solution */
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* remove hyperlink underline; change font to dark gray */
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+/* remove bullets */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  flex: 0 0 auto;
+  padding: 16px;
+}
+
+/* stack containers vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* prevent sidebar and cards from shrinking. allow them to fill up screen vertically */
+.middle-section {
+  display: flex;
+  flex: 1;
+}
+
+.all-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 16px;
+  gap: 16px;
+}
+
+/* align text in middle of footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* set card dimensions */
+.card {
+  /* display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; */
+  width: 300px;
+
+}
